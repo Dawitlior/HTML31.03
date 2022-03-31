@@ -28,6 +28,10 @@
             background-size: cover;
 
         }
+
+        input{
+            width: 30%;
+        }
         
         footer{
             background-color: rgb(228, 138, 138);
@@ -39,6 +43,14 @@
             width: 100%;
             color: aliceblue;
 
+        }
+        .table{
+            padding: 100px;
+            border: gold;
+            border-collapse: collapse;
+            background-color: rgb(100, 100, 31);
+            width: 90%;
+            
         }
     </style>
 </head>
@@ -62,19 +74,61 @@
         
 
             <label for="fname"><b><i>First name:</i> </b></label>
-            <input type="name" id="fname" maxlength="10">
+            <input type="name" id="fname" maxlength="30" minlength="2">
             
             <br><br>
 
             <label for="email"><b><strong>Email:</strong></b></label>
             <input type="email" id="email" placeholder="lior23@walla.com" >
 
+            <br><br>
+
+            <label for="number"><b><i> Grades:</i></b></label>
+            <input type="number" id="number" min="0" max="15" onkeydown="return false">
+
+            <br><br>
+            <button style="color:#c31583;">Save</button>
         </form>
     </div>
     <footer>
         FACEBOOK  INSTEGRAN  TWITTER
     </footer>
-    
+    <br>
+    <div>
+        <table class="table">
+            <thead>
+                <th>Full name</th>
+            <th>Date</th>
+            <th>Email</th>
+            </thead>
+            <tr>
+                <td>Salomon avraham</td>
+                <td>31.7.1991</td>
+                <td>salomon12@walla.com</td>
+            </tr>
+            <tr>
+                <td>Abayneh asaye</td>
+                <td>29.12.1995</td>
+                <td>abayneh12@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Daniel malada</td>
+                <td>24.12.1997</td>
+                <td>daniel@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Lior dawit</td>
+                <td>28.03.1997</td>
+                <td>dawit123@walla.co.il</td>
+            </tr>
+            <tr>
+                <td>lior aytegev</td>
+                <td>12.4.1992</td>
+                <td>aytegev1212@sport</td>
+            </tr>
+        </table>
+
+    </div>
 </body>
     
 
